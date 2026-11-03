@@ -1,8 +1,8 @@
 {
-  "$schema": "https://raw.githubusercontent.com/natanmassuia/kore-agent-skills/main/agent-install.schema.json",
+  "$schema": "https://raw.githubusercontent.com/natanmassuia/personal-agent-skills/main/agent-install.schema.json",
   "name": "Kore Agent Skills",
   "description": "Multi-agent skills for Kore development",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "skills_source": "skills/",
   "targets": {
     "opencode": {

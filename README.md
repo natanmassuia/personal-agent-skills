@@ -2,7 +2,7 @@
 
 Catálogo de skills e documentação do ambiente multiagente utilizado no desenvolvimento do Kore.
 
-Este repositório mantém as skills próprias do projeto. Skills e ferramentas externas permanecem associadas aos respectivos projetos de origem e não são republicadas aqui sem verificação de licença.
+Este repositório mantém as skills próprias do projeto e, quando reutiliza skills de terceiros, preserva a atribuição e a licença de origem (ver "Skills de terceiros incluídas").
 
 ## Skills próprias
 
@@ -178,21 +178,37 @@ Skills gerenciadas pelo AI Memory:
     ai-memory-retrieval
     ai-memory-routing-install
 
-Esses conjuntos não devem ser copiados para `skills/` sem verificação explícita da licença do projeto upstream.
+Esses três conjuntos (Matt Pocock, GitHub Spec Kit, AI Memory) não são copiados para `skills/` sem verificação explícita da licença do projeto upstream.
+
+### Skills de terceiros incluídas (com atribuição)
+
+Copiadas para `skills/` preservando autor e licença de origem no frontmatter de cada `SKILL.md` (`metadata.author` / `license`):
+
+| Skill | Autor | Licença |
+|---|---|---|
+| `supabase-postgres-best-practices` | Supabase | MIT |
+| `vercel-composition-patterns` | Vercel | MIT |
+| `vercel-react-best-practices` | Vercel | MIT |
+| `web-design-guidelines` | Vercel | não declarada no upstream |
+| `writing-guidelines` | Vercel | não declarada no upstream |
+| `find-skills` | Anthropic | não declarada no upstream |
+| `differential-review` | Trail of Bits / Anthropic | não declarada no upstream |
+
+As três MIT podem ser redistribuídas livremente mantendo o aviso de licença. As quatro sem licença declarada são mantidas como espelho das versões instaladas no ambiente; se o upstream publicar termos restritivos, remova-as.
 
 ## Instalação das skills próprias
 
 Linux ou macOS:
 
-    git clone https://github.com/natanmassuia/kore-agent-skills.git
-    cd kore-agent-skills
+    git clone https://github.com/natanmassuia/personal-agent-skills.git
+    cd personal-agent-skills
     mkdir -p /caminho/do/projeto/.agents/skills
     cp -R skills/. /caminho/do/projeto/.agents/skills/
 
 Windows PowerShell:
 
-    git clone https://github.com/natanmassuia/kore-agent-skills.git
-    cd kore-agent-skills
+    git clone https://github.com/natanmassuia/personal-agent-skills.git
+    cd personal-agent-skills
     .\install\install-opencode.ps1 -TargetProjectPath "E:\Projects\kore-app"
     .\install\install-codex.ps1
 
