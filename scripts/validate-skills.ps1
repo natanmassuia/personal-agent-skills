@@ -1,4 +1,4 @@
-# Validate Kore agent skills - check for secrets, missing files, and structure issues.
+# Validate personal agent skills - check for secrets, missing files, and structure issues.
 param(
     [string]$SkillsDir = "$PSScriptRoot\..\skills"
 )
@@ -9,7 +9,7 @@ $errors = @()
 $warnings = @()
 
 Write-Host ""
-Write-Host "=== Kore Agent Skills Validator ===" -ForegroundColor Cyan
+Write-Host "=== Personal Agent Skills Validator ===" -ForegroundColor Cyan
 Write-Host "Skills directory: $SkillsDir"
 Write-Host ""
 

@@ -1,13 +1,13 @@
 #Requires -Version 5.1
 <#
 .SYNOPSIS
-    Installs Kore agent skills into an OpenCode project.
+    Installs personal agent skills into an OpenCode project.
 
 .PARAMETER TargetProjectPath
     Absolute path to the target project directory.
 
 .EXAMPLE
-    .\install\install-opencode.ps1 -TargetProjectPath "E:\Projects\kore-app"
+    .\install\install-opencode.ps1 -TargetProjectPath "E:\Projects\my-app"
 #>
 [CmdletBinding()]
 param(

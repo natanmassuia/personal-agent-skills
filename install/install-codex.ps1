@@ -1,13 +1,13 @@
 #Requires -Version 5.1
 <#
 .SYNOPSIS
-    Installs Kore agent skills into a Codex/OpenAI coding agent project.
+    Installs personal agent skills into a Codex/OpenAI coding agent project.
 
 .PARAMETER TargetProjectPath
     Absolute path to the target project directory.
 
 .EXAMPLE
-    .\install\install-codex.ps1 -TargetProjectPath "E:\Projects\kore-app"
+    .\install\install-codex.ps1 -TargetProjectPath "E:\Projects\my-app"
 #>
 [CmdletBinding()]
 param(
@@ -102,7 +102,7 @@ foreach ($SkillDir in $SkillDirs) {
 
 $ManagedBlock = @"
 $BlockStart
-## Kore Agent Skills
+## Personal Agent Skills
 
 Skills are stored in `.agents/skills/<skill-name>/SKILL.md`.
 
@@ -120,7 +120,7 @@ $($SkillSummaries.ToString().TrimEnd())
 ### Rules
 
 - Do not store secrets, tokens, or credentials in skill files or agent instructions.
-- Skills operate within the Kore security and permissions model.
+- Skills operate within the project's security and permissions model.
 - Each skill requires a final Markdown report in `.dev-reports/`.
 $BlockEnd
 "@

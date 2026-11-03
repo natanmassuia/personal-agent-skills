@@ -1,6 +1,6 @@
-# Kore Agent Skills
+# Personal Agent Skills
 
-Catálogo de skills e documentação do ambiente multiagente utilizado no desenvolvimento do Kore.
+Catálogo pessoal de skills e documentação do ambiente multiagente usado no meu desenvolvimento.
 
 Este repositório mantém as skills próprias do projeto e, quando reutiliza skills de terceiros, preserva a atribuição e a licença de origem (ver "Skills de terceiros incluídas").
 
@@ -9,6 +9,7 @@ Este repositório mantém as skills próprias do projeto e, quando reutiliza ski
 | Skill | Finalidade |
 |---|---|
 | `caveman` | Reduzir implementações à forma mais simples e direta |
+| `design-motion-principles` | Criar e auditar motion/animação de UI com propósito e acessibilidade |
 | `e2e-validator` | Auditar cobertura e fluxos end-to-end |
 | `kore-fix` | Executar correções pequenas e focadas |
 | `kore-report` | Produzir relatórios técnicos estruturados |
@@ -17,6 +18,7 @@ Este repositório mantém as skills próprias do projeto e, quando reutiliza ski
 | `security-audit` | Revisar segurança e riscos OWASP |
 | `security-source-audit` | Auditoria de fonte para apps internos/vibecoded — automação de rede, credenciais de equipamento, injeção de comando/SSH, hardening operacional |
 | `ui-polish` | Revisar consistência visual e acessibilidade |
+| `ui-ux-pro-max` | Buscar base de conhecimento UI/UX e gerar design systems por stack |
 | `ux-writing-skill` | Melhorar textos, mensagens e microcopy |
 
 `security-audit` e `security-source-audit` são complementares: o primeiro revisa segurança de aplicação contra OWASP Top 10; o segundo audita a fonte de sistemas internos/vibecoded (credenciais de equipamento, automação de rede, injeção de comando/SSH) com evidência por arquivo/linha.
@@ -34,7 +36,7 @@ As skills ficam em:
 | Antigravity CLI — AGY | `.agents/skills/` |
 | Claude Code | `.claude/skills/`, quando utilizado |
 
-O diretório compartilhado preferencial no KoreWorkspace é:
+O diretório compartilhado preferencial no workspace é:
 
     .agents/skills/
 
@@ -46,7 +48,7 @@ Fornece navegação semântica por símbolos, referências, implementações e d
 
 Responsabilidade:
 
-    entender a estrutura e os símbolos do Kore
+    entender a estrutura e os símbolos do projeto
 
 Configuração reproduzível:
 
@@ -209,7 +211,7 @@ Windows PowerShell:
 
     git clone https://github.com/natanmassuia/personal-agent-skills.git
     cd personal-agent-skills
-    .\install\install-opencode.ps1 -TargetProjectPath "E:\Projects\kore-app"
+    .\install\install-opencode.ps1 -TargetProjectPath "E:\Projects\my-app"
     .\install\install-codex.ps1
 
 ## Manifesto automático
@@ -252,11 +254,11 @@ Antes de cada commit:
     git diff --check
     git diff --cached
 
-## Relação com o KoreWorkspace
+## Relação com o workspace
 
 Este repositório é a fonte das skills próprias.
 
-O KoreWorkspace contém a instalação efetiva e as configurações específicas:
+O workspace onde elas são usadas contém a instalação efetiva e as configurações específicas:
 
     .agents/skills/
     .ai-memory.toml

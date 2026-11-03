@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/natanmassuia/personal-agent-skills/main/agent-install.schema.json",
-  "name": "Kore Agent Skills",
-  "description": "Multi-agent skills for Kore development",
+  "name": "Personal Agent Skills",
+  "description": "Personal multi-agent skills collection",
   "version": "1.1.0",
   "skills_source": "skills/",
   "targets": {
