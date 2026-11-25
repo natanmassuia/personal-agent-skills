@@ -18,6 +18,7 @@ Este repositório mantém as skills próprias do projeto e, quando reutiliza ski
 | `ponytail` | Aplicar mudanças completas com o menor escopo e código possível |
 | `rtk` | Reduzir ruído na saída de comandos de terminal |
 | `security-audit` | Revisar segurança e riscos OWASP |
+| `auditoria-seguranca-automacao-rede` | Auditar sistemas que automatizam firewalls e equipamentos de rede; autoria de Thiago |
 | `security-source-audit` | Auditoria de fonte para apps internos/vibecoded — automação de rede, credenciais de equipamento, injeção de comando/SSH, hardening operacional |
 | `ui-polish` | Revisar consistência visual e acessibilidade |
 | `ui-ux-pro-max` | Buscar base de conhecimento UI/UX e gerar design systems por stack |
