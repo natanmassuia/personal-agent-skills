@@ -15,6 +15,8 @@ Este repositório mantém as skills próprias do projeto e, quando reutiliza ski
 | `kore-report` | Produzir relatórios técnicos estruturados |
 | `kore-validate` | Executar validação progressiva por risco |
 | `performance-audit` | Identificar gargalos e caminhos lentos |
+| `ponytail` | Aplicar mudanças completas com o menor escopo e código possível |
+| `rtk` | Reduzir ruído na saída de comandos de terminal |
 | `security-audit` | Revisar segurança e riscos OWASP |
 | `security-source-audit` | Auditoria de fonte para apps internos/vibecoded — automação de rede, credenciais de equipamento, injeção de comando/SSH, hardening operacional |
 | `ui-polish` | Revisar consistência visual e acessibilidade |
@@ -26,6 +28,10 @@ Este repositório mantém as skills próprias do projeto e, quando reutiliza ski
 As skills ficam em:
 
     skills/<nome-da-skill>/SKILL.md
+
+## Migração do ambiente local
+
+O catálogo inclui as skills instaladas em `~/.agents/skills/`, as skills próprias adicionais do Claude Code e as skills do OpenCode. O CommandCode usa a instalação de skills do Claude Code neste ambiente. Skills que já existiam no repositório foram mantidas; `ponytail` e `rtk` foram sincronizadas com as cópias locais.
 
 ## Agentes suportados
 
